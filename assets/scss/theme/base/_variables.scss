@@ -1,0 +1,117 @@
+// ==================================================
+// Brand
+// ==================================================
+$brand: #fff;
+$brand-black: #000000;
+$brand-white: #ffffff;
+$brand-gray: #666666;
+$brand-dark-gray: #333;
+$brand-gray-light: #999999;
+$brand-gray-light-2: #cccccc;
+$brand-gray-lightest: #efefef;
+$brand-gray-lightest-2: #f0f0f0;
+$brand-red: #ed1c24;
+$brand-blue: #002663;
+// $brand-gradient: #c3c3c3;
+$brand-gradient: $brand-gray-light-2;
+
+$modal-background: rgba(0, 0, 0, .7);
+$modal-content-background: $brand-white;
+$brand-gray-border: #cccccc;
+
+$section-color-text: $brand-gray-lightest;
+$section-color-background: $brand-dark-gray;
+
+$highlight: #ffc;
+$bg-body: $brand;
+$content-area: #fff;
+
+$header-gradient-c1: #BC8F39;
+$header-gradient-c2: #E1C788;
+$header-gradient-c3: #ffe8b4;
+
+// ========================================== ========
+// Animations
+// ==================================================
+$base-duration: 150ms;
+$base-timing: ease;
+
+// ==================================================
+// Grid information
+// ==================================================
+$max-grid-width: 1224px;
+
+// ==================================================
+// Typography
+// ==================================================
+$font: 'Helvetica', 'Arial', sans-serif;
+$script: "Caveat", sans-serif;
+$default-text-color: $brand-dark-gray;
+
+$footer-link-hover: $brand-gray-light;
+$footer-link: $brand-gray;
+$footer-icon: $brand-gray;
+
+$container-padding: 20px;
+
+$h1-size: 3.6em;
+$h1-size-tablet: 2.6em;
+$h2-size: 2.2em;
+$h3-size: 1.8em;
+$h4-size: 1.8em;
+$h5-size: 24px;
+$h6-size: 1.4em;
+
+$h1-text: $brand-blue;
+$h2-text: $brand-blue;
+$h3-text: $brand-blue;
+$h4-text: $brand-blue;
+$h5-text: $brand-blue;
+$h6-text: $brand-blue;
+
+$h1-link: $brand-dark-gray;
+$h2-link: $brand-dark-gray;
+$h3-link: $brand-dark-gray;
+$h4-link: $brand-dark-gray;
+$h5-link: $brand-dark-gray;
+$h6-link: $brand-dark-gray;
+
+$h1-link-hover: $brand-dark-gray;
+$h2-link-hover: $brand-dark-gray;
+$h3-link-hover: $brand-dark-gray;
+$h4-link-hover: $brand-dark-gray;
+$h5-link-hover: $brand-dark-gray;
+$h6-link-hover: $brand-dark-gray;
+
+$p-text: $default-text-color;
+$p-size: 15pt;
+
+$link: $brand-dark-gray;
+$link-hover: $brand-dark-gray;
+$rule: $brand-dark-gray;
+
+$blockquote: #444;
+
+$table-bg: #fff;
+$table-bg-hover: darken($table-bg, 10%);
+$td-text: #444;
+$th-text: $brand-dark-gray;
+
+// ==================================================
+// Buttons
+// ==================================================
+$button-bg: #eee;
+$button-bg-focus: #e5e5e5;
+
+// ==================================================
+// Forms
+// ==================================================
+$valid: none;
+$invalid: #f0dddd; // red
+
+$input-bg: #fff;
+$input-border: #ccc;
+$input-color: #a4a4a4;
+$label-color: #444;
+
+$input-size: 1.2em;

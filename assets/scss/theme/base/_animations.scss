@@ -1,0 +1,23 @@
+// Generic Animations
+@keyframes hover-scale {
+  
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+
+  100% {
+    transform: scale(1.15, 1.15);
+  }
+}
+  
+@keyframes left-to-right-reveal {
+
+  0% {
+    margin-left: -30px;
+  }
+
+  100% {
+    margin-left: 20px;
+  }
+}
+  

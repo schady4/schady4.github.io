@@ -1,0 +1,45 @@
+// ==================================================
+// Basic Styles
+// ==================================================
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  text-shadow: none;
+  background: $section-color-background;
+  color: $section-color-text;
+}
+
+html,
+body {
+  background-color: $bg-body;
+  height: 100%;
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  color: $default-text-color;
+  font: 14px / 24px $font;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  @include mobile-landscape-gt {
+    padding-top: 120px;
+  }
+
+  &.scroll {
+    overflow: hidden;
+  }
+  &.alert-active {
+    padding-top: 164px;
+    @include mobile-landscape-lt {
+      padding-top: 46px;
+    }
+  }
+}
+
+p:empty {
+  display: none;
+}

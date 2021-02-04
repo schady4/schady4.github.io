@@ -1,0 +1,17 @@
+@mixin append-color-class($dom-elem, $property) {
+  @each $color-key, $color-value in $color-features {
+    #{$dom-elem} {
+      .#{$color-key} & {
+        #{$property}: #{$color-value};
+      }
+    }
+  }
+}
+
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}
