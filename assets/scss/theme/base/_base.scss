@@ -25,19 +25,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 
-  @include mobile-landscape-gt {
-    padding-top: 120px;
-  }
+
 
   &.scroll {
     overflow: hidden;
   }
-  &.alert-active {
-    padding-top: 164px;
-    @include mobile-landscape-lt {
-      padding-top: 46px;
-    }
-  }
+
 }
 
 p:empty {

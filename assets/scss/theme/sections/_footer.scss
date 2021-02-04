@@ -3,10 +3,6 @@ footer.main {
   position: relative;
 
 
-  @include mobile-landscape-lt {
-    padding-top: 75px;
-  }
-
   a {
     color: $footer-link;
     text-decoration: none;
