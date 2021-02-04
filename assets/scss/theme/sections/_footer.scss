@@ -1,7 +1,7 @@
 footer.main {
   background-color: $brand-gray-lightest;
   position: relative;
-  padding-top: 150px;
+
 
   @include mobile-landscape-lt {
     padding-top: 75px;
