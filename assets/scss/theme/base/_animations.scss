@@ -1,6 +1,6 @@
 // Generic Animations
 @keyframes hover-scale {
-  
+
   50% {
     transform: scale(1.1, 1.1);
   }
@@ -9,7 +9,7 @@
     transform: scale(1.15, 1.15);
   }
 }
-  
+
 @keyframes left-to-right-reveal {
 
   0% {
@@ -20,4 +20,20 @@
     margin-left: 20px;
   }
 }
-  
+
+@keyframes glitch-bounce {
+  20% { transform: translate(-1%,0%); }
+  40% { transform: translate(14%,-2%); }
+  50% { transform: translate(-5%,5%); }
+  65% { transform: translate(1%,-2%); }
+  80% { transform: translate(-3%,2%); }
+}
+
+@keyframes glitch-anim {
+  0% { clip-path: polygon(0 70%, 100% 70%, 100% 75%, 0 75%); }
+  20% { clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%); }
+  40% { clip-path: polygon(0 33%, 100% 33%, 100% 33%, 0 33%); }
+  60% { clip-path: polygon(0 50%, 100% 50%, 100% 20%, 0 20%); }
+  80% { clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%); }
+  100% { clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%); }
+}

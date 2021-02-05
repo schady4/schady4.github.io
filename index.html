@@ -18,15 +18,24 @@
     <link rel="stylesheet" href="/tmp/css/fa-regular.css"/>
     <link rel="stylesheet" href="/tmp/css/fa-solid.css"/>
     <link rel="stylesheet" href="/tmp/css/fa-shims.css"/>
+    <link rel="stylesheet" href="/tmp/css/splitting.css"/>
   </head>
   <body>
     <div class="hero-container">
-      <p>hero</p>
+      <canvas id="canvas-image-blending"></canvas>
+      <div class="name-one">
+        <p data-splitting>Jarett</p>
+      </div>
+      <div class="name-two">
+        <p data-splitting>Schadlich</p>
+      </div>
     </div>
     <footer id="footer">
-      <p>Copyright (c) foobar</p><!-- javascript includes !-->
-      <script src="/tmp/js/jquery-3.4.1.min.js"></script>
-      <script src="/tmp/js/modernizr-2.8.3.min.js"></script>
+      <div class="footer-container"></div><a href="http://github.com"></a><!-- javascript includes !-->
+      <script src="/tmp/js/vendor/jquery-3.4.1.min.js"></script>
+      <script src="/tmp/js/vendor/modernizr-3.11.4.min.js"></script>
+      <script src="/tmp/js/vendor/splitting.min.js"></script>
+      <script src="/tmp/js/vendor/granim.min.js"></script>
       <script src="/tmp/js/script.js"></script>
       <script>
         window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;

@@ -1,6 +1,23 @@
 (function ($) {
     'use strict';
 
+  const setupGranim = function() {
+    var granimInstance = new Granim({
+      element: '#canvas-image-blending',
+      direction: 'top-bottom',
+      isPausedWhenNotInView: true,
+      states : {
+          "default-state": {
+              gradients: [
+                  ['#29323c', '#485563'],
+                  ['#FF6B6B', '#556270'],
+              ],
+              transitionSpeed: 7000
+          }
+      }
+    });
+  }
+
 	const setupSliderFunction = function() {
 
         /**
@@ -127,13 +144,14 @@
 
 	  // Inits the Functions on Doc Ready
 	  $(document).ready(function() {
-        scrollToHomeFunction();
-        if( !$('video').length ) {
-            return false;
-        }
-        setupSliderFunction();
-        videoPlayerClickSetup();
-
+        //scrollToHomeFunction();
+        //if( !$('video').length ) {
+        //    return false;
+        //}
+        //setupSliderFunction();
+        //videoPlayerClickSetup();
+        setupGranim();
+        Splitting();
 	  });
 
 })(jQuery);

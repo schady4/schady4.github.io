@@ -1,0 +1,91 @@
+.hero-container {
+  height: 100%;
+  background-color: #3c3c3c;
+  position: relative;
+  max-height: 800px;
+  background-image: url('/img/halftone-bg.png');
+  background-size: cover;
+  background-blend-mode: screen;
+  overflow: hidden;
+  opacity: 0.75;
+
+
+  #canvas-image-blending {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .8;
+
+
+  }
+  .name-one {
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 85px;
+    right: 0;
+
+  }
+  .name-two {
+    position: absolute;
+    right: 0;
+    transform: rotate(90deg);
+    top: 174px;
+    right: -157px;
+
+  }
+
+
+  .name-one,
+  .name-two {
+    p {
+      font-size: 90px;
+      font-weight: bold;
+      color: white;
+      margin: 0;
+      line-height: .8;
+      @include tablet-portrait-lt {
+        font-size: 84px;
+      }
+      .char,
+      .char:before,
+      .char:after {
+        transition: color 0.2s linear;
+        animation-duration: 0.6s, 0.4s;
+
+        animation-iteration-count: infinite;
+        animation-timing-function: steps(1);
+        animation-delay: calc( -0.1s * var(--char-index) );
+      }
+
+      .char:before,
+      .char:after {
+           visibility: visible;
+        opacity: 0;
+        mix-blend-mode: overlay;
+        transition-property: opacity;
+        animation-name: glitch-anim, glitch-bounce;
+        animation-play-state: paused;
+      }
+
+      .char:before {
+        color: #F85959;
+        animation-delay: calc( -0.02s * var(--char-index) );
+      }
+
+      .char:after {
+        color: #B7F5DE;
+        animation-delay: calc( -.5s * var(--char-index) );
+      }
+
+      &:hover .char { color: rgba(255,255,255,0.3); animation-name: glitch-bounce; }
+      &:hover .char:before,
+      &:hover .char:after { opacity: 1; animation-play-state: running; }
+
+    }
+  }
+}
